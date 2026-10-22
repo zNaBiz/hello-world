@@ -65,8 +65,6 @@ for (let i = 1; i < 6; i++){
     console.log(fruits[i])
    }
 
-   fruits[i]
-
    let energi = 3;
    while (energi > 0){
     console.log("sprang ett varv. energi kvar:" + energi)
@@ -74,6 +72,26 @@ for (let i = 1; i < 6; i++){
    }
    console.log("slut på enrgi! måste vila...Zzz")
 
-   
+   let elever = [
+    { name: "Hejsan", poang:85},
+    { name: "Svejsan", poang:1000},
+    { name: "Nejsan", poang:10},
+   ]
 
-   
+   for (let i = 0; i < elever.length; i++){
+    console.log(elever[i].name + " - " + elever[i].poang)
+   }
+
+
+   for (const elev of elever){
+    console.log(elev.name)
+   }
+
+   for (let i = 5; i >=1; i--){
+    if (i === 3) {
+        console.log(i + "- Halvvägs där!")
+    } else {
+    console.log("Sekunder kvar:" + i)
+   }
+}
+console.log("LIFT OFF!")
