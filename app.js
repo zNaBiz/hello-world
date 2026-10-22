@@ -37,4 +37,43 @@ switch (trafficLight) {
                 console.log("okänd signal")
 }
 
+
+const weather ="regn";
+switch (weather) {
+    case "regn":
+        console.log("Ta med paraply!")
+        break;
+        case "sol":
+        console.log("Glöm inte solglasögon")
+        break;
+        case "snö":
+            console.log("Bygg en snögubbe")
+            break;
+            default:
+                console.log("Kolla väderappen igen")
+}
+
+
+
+
+for (let i = 1; i < 6; i++){
+    console.log(i)
+}
+   const fruits = ["banan", "äpple", "mango"]
+
+   for (let i = 0; i < fruits.length; i++){
+    console.log(fruits[i])
+   }
+
+   fruits[i]
+
+   let energi = 3;
+   while (energi > 0){
+    console.log("sprang ett varv. energi kvar:" + energi)
+    energi-- //Minskar energi med 1 efter varje vav 
+   }
+   console.log("slut på enrgi! måste vila...Zzz")
+
+   
+
    
