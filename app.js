@@ -171,3 +171,39 @@ for (const item of cart){
     }
 
 }
+
+//break
+
+for (let i = 0; i < cart.length; i++){
+if (cart[i] === "kaffe") {
+    console.log("warning coffein detected")
+}else{
+    console.log("köp: " + cart[i])
+}
+}
+
+//===============ny lektion=============funktioer============
+
+
+const halsa = (namn, age, roll) => {
+    console.log("hej " + namn, age, roll)
+
+    if (age < 18){
+        return console.log("du ä inte myndig")
+    }
+    console.log("du är myndig")
+}
+halsa("cindy", 22, "student")
+
+const skapaKonto = (name, age, roll = "gäst") => {
+    console.log("hej " + name, age, roll)
+
+    if (age < 18){
+        return {message: "du är inte myndig"}
+    }
+    return {message: "du är myndig"}
+}
+
+const skapaKontoObject = {message: "du är myndig"}
+console.log(skapaKontoObject.message)
+
