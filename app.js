@@ -8,6 +8,8 @@ if (age >= 15 && hasTicket == true){
     console.log("gå köp ticket din snåle fan")
 }
 
+//break
+
 const isLoggedIn = true;
 const userRole = "admin";
 
@@ -21,6 +23,8 @@ if (isLoggedIn === true){
 } else {
      console.log ("du måste logga in först")
 }
+
+//break
 
 const trafficLight = "gul";
 switch (trafficLight) {
@@ -37,6 +41,7 @@ switch (trafficLight) {
                 console.log("okänd signal")
 }
 
+//break
 
 const weather ="regn";
 switch (weather) {
@@ -53,7 +58,7 @@ switch (weather) {
                 console.log("Kolla väderappen igen")
 }
 
-
+//break
 
 
 for (let i = 1; i < 6; i++){
@@ -65,12 +70,16 @@ for (let i = 1; i < 6; i++){
     console.log(fruits[i])
    }
 
+   //break
+
    let energi = 3;
    while (energi > 0){
     console.log("sprang ett varv. energi kvar:" + energi)
     energi-- //Minskar energi med 1 efter varje vav 
    }
    console.log("slut på enrgi! måste vila...Zzz")
+
+    //break
 
    let elever = [
     { name: "Hejsan", poang:85},
@@ -87,6 +96,8 @@ for (let i = 1; i < 6; i++){
     console.log(elev.name)
    }
 
+   //break
+
    for (let i = 5; i >=1; i--){
     if (i === 3) {
         console.log(i + "- Halvvägs där!")
@@ -95,3 +106,68 @@ for (let i = 1; i < 6; i++){
    }
 }
 console.log("LIFT OFF!")
+
+
+//break
+
+const firstName = "Cindy"
+let alder = 22
+const arStudent = true
+console.log(firstName, alder, arStudent)
+
+//break
+
+const favoriteFlower = ["roses", "orchids", "cactus"]
+console.log(favoriteFlower[0])
+
+favoriteFlower.push("lilies")
+
+console.log(favoriteFlower.length)
+
+//break
+
+const juice = {
+brand: "pfanner",
+color: "red",
+made: "japan"
+}
+console.log(juice.brand)
+juice.made = ("china")
+console.log(juice)
+
+//break
+
+const country = ("japan")
+switch (country){
+    case "japan":
+        console.log("KONBANWA, JAPAN HERE I COME")
+        break;
+        case "china":
+            console.log("xie xie, LETS GO")
+            break;
+            case "korea":
+          console.log("gwenchena, BIBIMBAP I COME")
+          break;
+          default:
+            console.log("where now? :(")
+}          
+for (let i = 5; i >= 1; i--){
+    if (i === 3){
+        console.log(i + " halvägs kvar, ganbare!: ")
+    } else{
+        console.log("när som helst nu: " + i)
+    }
+}
+console.log("FRAMME")
+
+//break
+
+const cart = ["mjölk", "kaffe", "honung", "kakao", "avokado"];
+for (const item of cart){
+    if (item === "kaffe")
+        console.log(item + ", warning coffein detected!")
+    else{
+        console.log("köp: " + item)
+    }
+
+}
